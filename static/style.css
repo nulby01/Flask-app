@@ -100,3 +100,114 @@ section p {
 section img {
     margin-bottom: 15px;
 }
+/* Styling untuk keseluruhan halaman */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e791b9;
+    color: rgb(240, 231, 231);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.fakta-item {
+    margin-bottom: 30px;
+}
+
+.fakta-item h3 {
+    color: #e791b9;
+    font-size: 1.6em;
+}
+
+.fakta-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.fakta-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;  /* Menentukan lebar gambar agar tidak terlalu besar */
+    height: auto;  /* Menjaga proporsi gambar */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f093d3;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.quote-box {
+    background-color: #ea3eef;  /* Ganti dengan warna biru */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;  /* Agar teks kutipan berwarna putih */
+}
+
+.quote-box blockquote {
+    font-style: italic;
+    color: white;  /* Warna teks kutipan menjadi putih */
+    margin: 0;
+}
+
+.quote-author {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f1f1f1;  /* Memberikan warna terang pada nama pengarang kutipan */
+}

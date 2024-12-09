@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dokumentasi PPI (Pemrograman Internet)</title>
+    <style>
+        /* CSS sama seperti sebelumnya */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #61dee9;
+            color: rgb(248, 205, 205);
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .highlight {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .highlight img {
+            max-width: 250px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .highlight p {
+            margin-top: 0.5rem;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .inspiration {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .item {
+            text-align: center;
+            padding: 1rem;
+            background-color: #eef2f3;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .item p {
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #68ebed;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dokumentasi PPI (Pemrograman Internet)</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Highlighted Photo -->
+        <div class="highlight">
+            <img src="{{ url_for('static', filename='images/dosen.jpg') }}" alt="Foto Dosen">
+            <p><strong>Prof. Dr. Inspirasi: "Pendidikan adalah kunci emas masa depan."</strong></p>
+        </div>
+
+        <h2>Dokumentasi  Pembelajaran PPI</h2>
+        <div class="inspiration">
+            <!-- Item 1 -->
+            <div class="item">
+                <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Image 1">
+                <p>"Belajar adalah investasi terbaik."</p>
+            </div>
+            <!-- Item 2 -->
+            <div class="item">
+                <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Image 2">
+                <p>"Kreativitas menciptakan dunia baru."</p>
+            </div>
+            <!-- Item 3 -->
+            <div class="item">
+                <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Image 3">
+                <p>"Inovasi adalah kunci masa depan."</p>
+            </div>
+            <!-- Item 4 -->
+            <div class="item">
+                <img src="{{ url_for('static', filename='images/image4.jpg') }}" alt="Image 4">
+                <p>"Perjalanan dimulai dengan langkah kecil."</p>
+            </div>
+            <!-- Item 5 -->
+            <div class="item">
+                <img src="{{ url_for('static', filename='images/image5.jpg') }}" alt="Image 5">
+                <p>"Kerja keras adalah jalan menuju sukses."</p>
+            </div>
+            <!-- Item 6 -->
+            <div class="item">
+                <img src="{{ url_for('static', filename='images/image6.jpg') }}" alt="Image 6">
+                <p>"Hidup adalah seni menggambar."</p>
+            </div>
+            <!-- Item 7 -->
+            <div class="item">
+                <img src="{{ url_for('static', filename='images/image7.jpg') }}" alt="Image 7">
+                <p>"Jadilah perubahan yang kamu inginkan."</p>
+            </div>
+            <!-- Item 8 -->
+            <div class="item">
+                <img src="{{ url_for('static', filename='images/image8.jpg') }}" alt="Image 8">
+                <p>"Teknologi adalah alat kreativitas."</p>
+            </div>
+            <!-- Item 9 -->
+            <div class="item">
+                <img src="{{ url_for('static', filename='images/image9.jpg') }}" alt="Image 9">
+                <p>"Ketekunan mengalahkan bakat."</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Website Serba Ada</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Fakta Dunia</title>
+</head>
+<body>
+    <header>
+        <h1>Fakta Dunia yang Menarik</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>🌍 Fakta Menarik Tentang Dunia</h2>
+
+            <!-- Fakta 1 -->
+            <section class="fakta-item">
+                <h3>1. Paus Biru, Hewan Terbesar di Bumi</h3>
+                <p>
+                    Paus biru adalah mamalia terbesar yang pernah ada di bumi. Panjang tubuhnya bisa mencapai 30 meter, lebih besar dari ukuran bus yang panjang!
+                </p>
+                <img src="{{ url_for('static', filename='images/blue_whale.jpg') }}" alt="Paus Biru" class="fakta-image">
+                <p>
+                    Meskipun ukurannya sangat besar, paus biru hanya memakan plankton kecil. Mereka menggunakan sistem penyaringan untuk menangkap plankton dari air laut yang mereka telan.
+                </p>
+            </section>
+
+            <!-- Fakta 2 -->
+            <section class="fakta-item">
+                <h3>2. Hutan Amazon Menyumbang 20% Oksigen Dunia</h3>
+                <p>
+                    Hutan Amazon di Amerika Selatan dikenal sebagai paru-paru dunia karena menghasilkan sekitar 20% dari oksigen yang kita hirup setiap hari.
+                </p>
+                <img src="{{ url_for('static', filename='images/amazon_forest.jpg') }}" alt="Hutan Amazon" class="fakta-image">
+                <p>
+                    Hutan ini juga menjadi rumah bagi berbagai macam spesies tumbuhan dan hewan yang belum sepenuhnya dipahami oleh para ilmuwan. Menghancurkan hutan Amazon bisa mengakibatkan perubahan besar dalam iklim global.
+                </p>
+            </section>
+
+            <!-- Fakta 3 -->
+            <section class="fakta-item">
+                <h3>3. Otak Manusia Lebih Banyak Koneksi daripada Bintang di Galaksi</h3>
+                <p>
+                    Otak manusia memiliki sekitar 100 triliun koneksi sinaptik, lebih banyak daripada jumlah bintang yang ada di galaksi kita, Bima Sakti!
+                </p>
+                <img src="{{ url_for('static', filename='images/human_brain.jpg') }}" alt="Otak Manusia" class="fakta-image">
+                <p>
+                    Koneksi-koneksi ini membentuk jaringan yang memungkinkan kita untuk berpikir, belajar, dan beradaptasi dengan lingkungan sekitar kita.
+                </p>
+            </section>
+
+            <!-- Fakta 4 -->
+            <section class="fakta-item">
+                <h3>4. 70% Permukaan Bumi Tertutup oleh Air</h3>
+                <p>
+                    Sekitar 70% permukaan bumi tertutup oleh air, namun hanya 3% dari air tersebut yang merupakan air tawar yang dapat digunakan oleh manusia. Sisanya adalah air laut yang asin.
+                </p>
+                <img src="{{ url_for('static', filename='images/ocean.jpg') }}" alt="Samudera" class="fakta-image">
+                <p>
+                    Lautan menutupi sebagian besar bumi dan menjadi sumber kehidupan bagi berbagai spesies. Sayangnya, sebagian besar air di bumi tidak dapat digunakan langsung oleh manusia.
+                </p>
+            </section>
+
+            <!-- Fakta 5 -->
+            <section class="fakta-item">
+                <h3>5. Gunung Everest, Puncak Tertinggi di Dunia</h3>
+                <p>
+                    Gunung Everest terletak di Himalaya dan memiliki ketinggian 8.848 meter di atas permukaan laut, menjadikannya puncak tertinggi di dunia.
+                </p>
+                <img src="{{ url_for('static', filename='images/everest.jpg') }}" alt="Gunung Everest" class="fakta-image">
+                <p>
+                    Meskipun ketinggiannya sangat ekstrem, banyak pendaki gunung berusaha menaklukkan Everest setiap tahunnya, meskipun dengan risiko yang sangat besar.
+                </p>
+            </section>
+
+            <!-- Fakta 6 -->
+            <section class="fakta-item">
+                <h3>6. Otak Kucing Memiliki 300 Juta Sel Saraf</h3>
+                <p>
+                    Otak kucing memiliki sekitar 300 juta sel saraf, hampir dua kali lipat jumlah yang ada pada anjing. Itulah mengapa kucing sangat cerdas dalam beradaptasi dengan lingkungannya.
+                </p>
+                <img src="{{ url_for('static', filename='images/cat_brain.jpg') }}" alt="Otak Kucing" class="fakta-image">
+                <p>
+                    Kucing dikenal karena ketajaman indra dan kecerdasannya dalam berburu serta berinteraksi dengan manusia.
+                </p>
+            </section>
+
+            <!-- Fakta 7 -->
+            <section class="fakta-item">
+                <h3>7. Bumi Bekerja Seperti Magnet Raksasa</h3>
+                <p>
+                    Bumi memiliki medan magnet yang melindungi kita dari radiasi matahari dan partikel berbahaya lainnya. Medan magnet ini terbentuk karena pergerakan inti besi di dalam bumi.
+                </p>
+                <img src="{{ url_for('static', filename='images/earth_magnetic_field.jpg') }}" alt="Medan Magnet Bumi" class="fakta-image">
+                <p>
+                    Tanpa medan magnet ini, kehidupan di Bumi akan sangat terancam karena radiasi dari ruang angkasa.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Website Serba Ada</p>
+    </footer>
+</body>
+</html>

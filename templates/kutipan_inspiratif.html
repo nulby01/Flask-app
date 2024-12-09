@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Kutipan Inspiratif</title>
+    <style>
+        .quote-box {
+            background-color: #f0f8ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .quote-box blockquote {
+            font-style: italic;
+            color: #333;
+            margin: 0;
+        }
+        .quote-author {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+        .quote-image {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+        }
+        .quote-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kutipan Inspiratif</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Kutipan 1 -->
+            <div class="quote-container">
+                <div class="quote-box">
+                    <blockquote>"The only way to do great work is to love what you do." </blockquote>
+                    <p class="quote-author">- Steve Jobs</p>
+                </div>
+                <img src="{{ url_for('static', filename='images/steve_jobs.jpg') }}" alt="Steve Jobs" class="quote-image">
+            </div>
+
+            <!-- Kutipan 2 -->
+            <div class="quote-container">
+                <div class="quote-box">
+                    <blockquote>"Success is not final, failure is not fatal: It is the courage to continue that counts." </blockquote>
+                    <p class="quote-author">- Winston Churchill</p>
+                </div>
+                <img src="{{ url_for('static', filename='images/winston_churchill.jpg') }}" alt="Winston Churchill" class="quote-image">
+            </div>
+
+            <!-- Kutipan 3 -->
+            <div class="quote-container">
+                <div class="quote-box">
+                    <blockquote>"You must be the change you wish to see in the world." </blockquote>
+                    <p class="quote-author">- Mahatma Gandhi</p>
+                </div>
+                <img src="{{ url_for('static', filename='images/mahatma_gandhi.jpg') }}" alt="Mahatma Gandhi" class="quote-image">
+            </div>
+
+            <!-- Kutipan 4 -->
+            <div class="quote-container">
+                <div class="quote-box">
+                    <blockquote>"In the middle of every difficulty lies opportunity." </blockquote>
+                    <p class="quote-author">- Albert Einstein</p>
+                </div>
+                <img src="{{ url_for('static', filename='images/albert_einstein.jpg') }}" alt="Albert Einstein" class="quote-image">
+            </div>
+
+            <!-- Kutipan 5 -->
+            <div class="quote-container">
+                <div class="quote-box">
+                    <blockquote>"The best way to predict the future is to create it." </blockquote>
+                    <p class="quote-author">- Peter Drucker</p>
+                </div>
+                <img src="{{ url_for('static', filename='images/peter_drucker.jpg') }}" alt="Peter Drucker" class="quote-image">
+            </div>
+
+            <!-- Kutipan 6 -->
+            <div class="quote-container">
+                <div class="quote-box">
+                    <blockquote>"Believe you can and you're halfway there." </blockquote>
+                    <p class="quote-author">- Theodore Roosevelt</p>
+                </div>
+                <img src="{{ url_for('static', filename='images/theodore_roosevelt.jpg') }}" alt="Theodore Roosevelt" class="quote-image">
+            </div>
+
+            <!-- Kutipan 7 -->
+            <div class="quote-container">
+                <div class="quote-box">
+                    <blockquote>"It does not matter how slowly you go as long as you do not stop." </blockquote>
+                    <p class="quote-author">- Confucius</p>
+                </div>
+                <img src="{{ url_for('static', filename='images/confucius.jpg') }}" alt="Confucius" class="quote-image">
+            </div>
+
+            <!-- Kutipan 8 -->
+            <div class="quote-container">
+                <div class="quote-box">
+                    <blockquote>"Life is what happens when you're busy making other plans." </blockquote>
+                    <p class="quote-author">- John Lennon</p>
+                </div>
+                <img src="{{ url_for('static', filename='images/john_lennon.jpg') }}" alt="John Lennon" class="quote-image">
+            </div>
+
+            <!-- Kutipan 9 -->
+            <div class="quote-container">
+                <div class="quote-box">
+                    <blockquote>"The journey of a thousand miles begins with one step." </blockquote>
+                    <p class="quote-author">- Lao Tzu</p>
+                </div>
+                <img src="{{ url_for('static', filename='images/lao_tzu.jpg') }}" alt="Lao Tzu" class="quote-image">
+            </div>
+
+            <!-- Kutipan 10 -->
+            <div class="quote-container">
+                <div class="quote-box">
+                    <blockquote>"What lies behind us and what lies before us are tiny matters compared to what lies within us." </blockquote>
+                    <p class="quote-author">- Ralph Waldo Emerson</p>
+                </div>
+                <img src="{{ url_for('static', filename='images/ralph_waldo_emerson.jpg') }}" alt="Ralph Waldo Emerson" class="quote-image">
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Website Serba Ada</p>
+    </footer>
+</body>
+</html>

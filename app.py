@@ -1,36 +1,31 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Necessary for flashing messages
-
-# Predefined username and password for simplicity
-valid_username = "husnul"
-valid_password = "securepassword"
 
 # Route for Home Page
 @app.route('/')
 def home():
     return render_template('home.html')
 
-# Route for About Page with login required
-@app.route('/about', methods=['GET', 'POST'])
+# Route for About Page
+@app.route('/about')
 def about():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        
-        if username == valid_username and password == valid_password:
-            return render_template('about.html')
-        else:
-            flash('Invalid username or password')
-            return redirect(url_for('login'))
-    else:
-        return redirect(url_for('login'))
+    return render_template('about.html')
 
-# Route for Login Page
-@app.route('/login')
-def login():
-    return render_template('login.html')
+# Route for Fakta Dunia Page
+@app.route('/fakta-dunia')
+def fakta_dunia():
+    return render_template('fakta_dunia.html')
+
+# Route for Kutipan Inspiratif Page
+@app.route('/kutipan-inspiratif')
+def kutipan_inspiratif():
+    return render_template('kutipan_inspiratif.html')
+
+# Route for Ide Kreatif Page
+@app.route('/ide-kreatif')
+def ide_kreatif():
+    return render_template('ide_kreatif.html')
 
 # Route for Contact Page
 @app.route('/contact')

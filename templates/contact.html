@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Contact - My Awesome Flask App</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Contact Image -->
+            <img src="{{ url_for('static', filename='images/contact_image.jpg') }}" alt="Contact Image" class="responsive-image">
+            
+            <h2>Get in Touch</h2>
+            <p>Butuh info? Ini kontak HP, bukan untuk PHP-an! 😄</p>
+            <ul>
+                <li><strong>Name:</strong> Husnul Fatimah</li>
+                <li><strong>Phone:</strong> 081292231879</li>
+                <li><strong>Email:</strong> <a href="mailto:husnul@example.com">husnul@example.com</a></li>
+            </ul>
+            <!-- Optionally, you can add a contact form here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Awesome Flask App</p>
+    </footer>
+</body>
+</html>

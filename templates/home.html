@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Home - Selamat Datang di Website Serba Ada</title>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Serba Ada</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Home Image -->
+            <img src="{{ url_for('static', filename='images/home_image.jpg') }}" alt="Home Image" class="responsive-image">
+            
+            <h2>Welcome!</h2>
+            <p>Halo, Sobat! 🎉 Selamat datang di Website Serba Ada, tempat di mana segala hal bisa kamu temukan
+                kecuali mungkin mantan yang hilang. Dari berita terkini sampai tips yang nggak terkini (tapi tetap berguna!), hingga konten kreatif yang bikin kamu mikir, "kok bisa ya?" Nikmati pengalaman scrolling tanpa sadar sambil ketawa-tawa, dan jangan sungkan buat komentar (kecuali kalau komentarnya galau, simpan buat diary aja). Yuk, kita ciptakan komunitas yang seru, kayak nongkrong tapi virtual. Selamat datang, dan semoga kamu menemukan apa yang kamu cari... atau minimal menemukan kenapa kamu nyasar ke sini! 😄</p>
+            <button onclick="alert('LETS GO TO THE JUNGGLE')">Click Me!</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Awesome Flask App</p>
+    </footer>
+</body>
+</html>
